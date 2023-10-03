@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+body{
+	font-family: 'Roboto', sans-serif;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.header-navbar .btn-outline-primary{
+	border-color: #005599 !important;
+	color: #005599 !important;
+}
+
+.header-navbar .btn-outline-primary:hover{
+	color: white !important;
+  background-color: #005599 !important;
+}
+
+.header-navbar a{
+	color: #3B3B3B !important;
+}
+
+.header-navbar a:hover{
+	color: #0203FE;
+	font-weight: bold;
+}
+
+#jumbotron img{
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+#berita h5, #pengumuman h5, #layanan h5, #berita_new p a{
+	font-weight: bold;
+	color: #212121;
+}
+
+#berita a, #pengumuman a{
+	color: #005599;
+	text-decoration: none;
+}
+
+#berita a:hover, #pengumuman a:hover, #berita_new p a:hover{
+	color: #0071CC !important;
+}
+
+#berita .date-post, #pengumuman .date-post, #berita_new .date-post{
+	font-size: 13px;
+	background-color: #005599;
+	color: white;
+}
+
+#berita .card-body, #pengumuman .card-body, #berita_new .card-body{
+	background-color: #E5FAFF;
+}
+
+#berita .card-body h5, #pengumuman .card-body h5{
+	color: #212121;
+}
+
+#berita .card-body p, #pengumuman .card-body p{
+	color: #A1A1A1;
+}
+
+#berita .pict-new img, #pengumuman .post-pengumuman .card-img-top, #berita_new .berita_new img{
+	width: 100% !important;
+	height: 13vw !important;
+	object-fit: cover !important;
+}
+
+#berita .img-fluid{
+	width: 100% !important;
+	height: 38.3vw !important;
+	object-fit: cover;
+}
+
+#berita h5 a, #pengumuman h5 a, #detail_berita p a{
+	color: #212121;
+}
+
+#berita h5 a:hover, #pengumuman h5 a:hover, #detail_berita p a:hover{
+	color: #0071CC;
+}
+
+#layanan .col-md-6 p{
+	color: #545454;
+}
+
+#layanan .card{
+	border: none;
+}
+
+#layanan .card-body{
+	padding: 0;
+}
+
+#layanan .card a{
+	text-decoration: none;
+	color: #212121;
+	font-weight: bold;
+}
+
+#layanan .card a:hover{
+	color: #0071CC;
+}
+
+#layanan .card p{
+	font-size: 13px;
+	color: #212121;
+}
+
+#footer{
+	background-color: #0071CC;
+}
+
+#footer .footer-logo{
+	max-height: 40px;
+}
+
+#footer h5{
+	font-family: 'Lato', sans-serif !important;
+	color: white;
+}
+
+#footer li{
+	font-family: 'Lato', sans-serif !important;
+	list-style-type: none;
+	color: white;
+	margin-bottom: 10px;
+}
+
+#footer li a{
+	font-family: 'Lato', sans-serif !important;
+	text-decoration: none;
+	color: white;
+}
+
+#footer li a:hover{
+	color: #99D1FF;
+}
+
+#footer-bawah{
+	background-color: #005599;
+}
+
+#footer-bawah p{
+	font-size: 12px;
+	color: white;
+	font-weight: normal;
+}
+
+/*List Berita*/
+
+#list-berita .title{
+	background-color: #EDEDED;
+}
+
+#list-berita .title h4{
+	font-family: 'Lato', sans-serif !important;
+	color: #212121;
+	font-weight: bold;
+}
+
+#list-berita .card{
+	flex-direction: row;
+	border: none;
+}
+
+#list-berita .card img{
+	max-width: 25%;
+	object-fit: cover;
+}
+
+#list-berita .card .card-body{
+	padding-top: 0px;
+}
+
+#list-berita .date-post{
+	font-size: 13px;
+}
+
+#list-berita .card-title a{
+	text-decoration: none;
+	color: #00447A;
+	font-weight: bold;
+}
+
+#list-berita .card-title a:hover{
+	color: #0071CC;
+}
+
+#list-berita .container .col-md hr{
+	border: 1px solid #00447A;
+}
+
+#list-berita .col-md-3 h5{
+	font-weight: bold;
+	color: #000151;
+	font-family: 'Lato', sans-serif !important;
+}
+
+/*List Berita*/
+
+/*detail berita*/
+
+#detail_berita .title-berita{
+	color: #00447A;
+	font-weight: bold;
+}
+
+#detail_berita .post ul{
+	padding-left: 0px !important;
+}
+
+#detail_berita .post li{
+	list-style-type: none;
+	color: #A1A1A1;
+}
+
+#detail_berita .post li label{
+	color: #212121;
+}
+
+#detail_berita .col-md-10 img{
+	max-width: 100%;
+	height: auto;
+}
+
+#detail_berita .col-md-2{
+	padding: 0;
+}
+
+#detail_berita .col-md-2 ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+/*detail berita*/
+
+/*berita terbaru*/
+
+#berita_new .row{
+	padding: 30px 70px;
+}
+
+#berita_new .row h5{
+	color: #002D52;
+	font-weight: bold;
+}
+
+#berita_new .berita_new p{
+	font-weight: bold;
+}
+
+#berita_new .berita_new{
+	margin: 0;
+	background-color: #EDEDED !important;
+}
+
+#berita_new p a{
+	font-weight: bold;
+	color: #212121;
+	text-decoration: none;
+}
+
+/*berita terbaru*/
+
+@media (max-width: 767px) {
+  /*#berita .pos-berita .w-50 .w-md-100{
+  	display: block !important;
+  	min-width: 100% !important;
+  }*/
+  #layanan .col-md-6 p{
+  	margin-top: 0px !important;
+  }
+
+  #layanan .col-md-3 .mb-4{
+  	margin-bottom: 5px !important;
+  }
+
+  #list-berita .card{
+  	flex-direction: column;
+  }
+
+  #list-berita .date-post{
+  	margin-top: 10px;
+  }
+
+  #list-berita .card-body{
+  	padding-left: 0px;
+  }
+
+  #berita .pict-new img, #pengumuman .post-pengumuman .card-img-top, #berita_new .berita_new img{
+  	width: 100%;
+  	height: 25vw !important;
+  	object-fit: cover;
+  }
+}
