@@ -331,9 +331,46 @@
         });
       })
 
-      // $(document).on("click",".lihat-selengkapnya",function() {
-      //     $("#exampleModal").modal('show');
-      // });
+      <script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        autoplay: true,
+        autoplayhoverpause: true,
+        autoplaytimeout: 200,
+        items: 2,
+        nav: true,
+        navText:["<b>🢐</b>","<b>🢒</b>"],
+        loop: true,
+        responsive:{
+          0:{
+            items:1
+          },
+          600:{
+           items:1,
+          },
+          800:{
+            items:2,
+          },
+          1200:{
+            items:2,
+          }    
+        }
+      });
+
+      $(".deksripsi-testimoni em").each(function() {
+        let text_str = $(this).html();
+
+        if(text_str.length > 300){
+          $(this).html(text_str.slice(0, 300) + ' ... <label class="lihat-selengkapnya"><u>Lihat Selengkapnya</u></label>');
+        }
+      });
+
+      $(document).on("click",".lihat-selengkapnya",function() {
+          $("#exampleModal").modal('show');
+      });
+    })
+  </script>
+  <!-- owl-carousel testimoni -->
     </script>
 
   </body>

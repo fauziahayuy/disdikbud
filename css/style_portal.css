@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+/* ============= Animation background ========= */
+.background {
+  background: linear-gradient(132deg, #0091B2, #33FFCC, #999AFF);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  padding:0;
+  margin:0px;
+}
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px #D7D4E4;
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 12s ease-in forwards infinite;
+}
+.cube:nth-child(2n) {
+  border-color: #FFF ;
+}
+.cube:nth-child(2) {
+  animation-delay: 2s;
+  left: 25vw;
+  top: 40vh;
+}
+.cube:nth-child(3) {
+  animation-delay: 4s;
+  left: 75vw;
+  top: 50vh;
+}
+.cube:nth-child(4) {
+  animation-delay: 6s;
+  left: 90vw;
+  top: 10vh;
+}
+.cube:nth-child(5) {
+  animation-delay: 8s;
+  left: 10vw;
+  top: 85vh;
+}
+.cube:nth-child(6) {
+  animation-delay: 10s;
+  left: 50vw;
+  top: 10vh;
+}
+/* ================= Header ============ */
+header{
+  position: absolute;
+  top:0%;
+  left: 0%;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Logo */
+.logo img{
+  width: 120px;
+  height: auto;
+}
+
+/* title */
+.title{
+  color: white;
+}
+
+.title p{
+  font-family: 'Lato', sans-serif !important;
+}
+
+/*content*/
+#content .card img{
+  width: 80px;
+}
+
+#content .card-body{
+  text-align: center;
+  border: none;
+  background-color: rgba(229, 250, 225, 0.5);
+}
+
+/*#content .card-body .col-md-3 a{
+  text-decoration: none;
+  color: #212121;
+}
+
+#content .card-body .col-md-3 a:hover{
+  background-color: #0091B2;
+}
+
+#content .card-body a{
+  background-color: white;
+  border-radius: 6px;
+  padding-top: 10px;
+}
+
+#content .card-body .col-md-3 p{
+  font-family: 'Lato', sans-serif !important;
+  font-weight: bold;
+}*/
+
+#content .col-md-4 .card{
+  border: none;
+}
+
+#content .col-md-4 .card-img-top{
+  height: 80px !important;
+  width: auto;
+}
+
+#content .col-md-4 .card-body{
+  background-color: white;
+}
+
+#content .col-md-4 .card-body p{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #212121;
+}
+
+#content .col-md-4 a:hover .card{
+  background-color: #0091B2 !important; 
+}
+
+#content .col-md-4 a:hover .card-body{
+  background-color: #0091B2 !important; 
+}
+
+#footer-bawah{
+  position: fixed;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
+
+
+/* Animate Background*/
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-md-4{
+    margin-top: 20px !important;
+  }
+
+  #footer-bawah{
+
+  }
+}
