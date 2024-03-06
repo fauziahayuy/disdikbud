@@ -12,7 +12,7 @@ body {
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   position: relative;
-  height: 100vh;
+  height: 170vh;
   width: 100%;
   overflow: hidden;
   padding:0;
@@ -140,12 +140,12 @@ header{
   background-color: #0091B2 !important; 
 }
 
-#footer-bawah{
+/* #footer-bawah{
   position: fixed;
    left: 0;
    right: 0;
    bottom: 0;
-}
+} */
 
 
 /* Animate Background*/
@@ -175,8 +175,12 @@ header{
   .col-md-4{
     margin-top: 20px !important;
   }
+}
 
-  #footer-bawah{
-
+@media screen and (max-width: 320px) {
+  .background { 
+      width: 200vh;
   }
 }
+
+
